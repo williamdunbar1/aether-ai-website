@@ -1,5 +1,5 @@
 /* ==========================================================================
-   AETHER AI — Luxury Design System & Master Stylesheet
+   AETHER AI — Luxury Design System & Master Stylesheet (Rose Pink Edition)
    Brand Aesthetics: Apple × Stripe × Notion Quiet Luxury
    ========================================================================== */
 
@@ -7,17 +7,17 @@
    1. DESIGN TOKENS & CSS VARIABLES
    -------------------------------------------------------------------------- */
 :root {
-  /* Colors - Light Theme (Default) */
-  --color-primary: #6C5CE7;
-  --color-primary-hover: #5A4FCF;
-  --color-primary-light: rgba(108, 92, 231, 0.08);
-  --color-secondary: #8F85F3;
-  --color-secondary-light: #A29BFE;
+  /* Colors - Light Theme (Rose Pink Palette) */
+  --color-primary: #EC4899;
+  --color-primary-hover: #DB2777;
+  --color-primary-light: rgba(236, 72, 153, 0.08);
+  --color-secondary: #F472B6;
+  --color-secondary-light: #FBCFE8;
   
-  --color-bg-main: #F7F5F0;
+  --color-bg-main: #FAF5F8;
   --color-bg-card: #FFFFFF;
-  --color-bg-card-subtle: #FBF8F4;
-  --color-bg-glass: rgba(255, 255, 255, 0.75);
+  --color-bg-card-subtle: #FFF8FA;
+  --color-bg-glass: rgba(255, 255, 255, 0.78);
   
   --color-text-primary: #2B2B2B;
   --color-text-secondary: #5A5A5A;
@@ -27,15 +27,15 @@
   --color-accent-neon: #F5F000;
   --color-accent-neon-text: #1C1C1E;
   
-  --color-border: rgba(108, 92, 231, 0.14);
+  --color-border: rgba(236, 72, 153, 0.16);
   --color-border-subtle: rgba(0, 0, 0, 0.06);
-  --color-border-hover: rgba(108, 92, 231, 0.4);
+  --color-border-hover: rgba(236, 72, 153, 0.45);
   
   /* Elevation & Shadows */
   --shadow-sm: 0 2px 8px rgba(43, 43, 43, 0.04);
-  --shadow-md: 0 10px 30px rgba(108, 92, 231, 0.08);
-  --shadow-lg: 0 24px 60px rgba(108, 92, 231, 0.14);
-  --shadow-glow: 0 0 35px rgba(108, 92, 231, 0.35);
+  --shadow-md: 0 10px 30px rgba(236, 72, 153, 0.08);
+  --shadow-lg: 0 24px 60px rgba(236, 72, 153, 0.14);
+  --shadow-glow: 0 0 35px rgba(236, 72, 153, 0.35);
   
   /* Fonts & Modular Scale */
   --font-headline: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -61,23 +61,23 @@
 
 /* Dark Theme Overrides */
 [data-theme="dark"] {
-  --color-bg-main: #0F0D15;
-  --color-bg-card: #181524;
-  --color-bg-card-subtle: #211D30;
-  --color-bg-glass: rgba(24, 21, 36, 0.75);
+  --color-bg-main: #140D12;
+  --color-bg-card: #1F131C;
+  --color-bg-card-subtle: #2B1926;
+  --color-bg-glass: rgba(31, 19, 28, 0.78);
   
-  --color-text-primary: #F7F5F0;
-  --color-text-secondary: #B3B0C2;
-  --color-text-muted: #7D7992;
+  --color-text-primary: #FAF5F8;
+  --color-text-secondary: #CBB6C4;
+  --color-text-muted: #9E8295;
   
-  --color-border: rgba(143, 133, 243, 0.2);
+  --color-border: rgba(244, 114, 182, 0.22);
   --color-border-subtle: rgba(255, 255, 255, 0.08);
-  --color-border-hover: rgba(162, 155, 254, 0.5);
+  --color-border-hover: rgba(251, 207, 232, 0.5);
   
   --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 12px 35px rgba(0, 0, 0, 0.5);
   --shadow-lg: 0 25px 70px rgba(0, 0, 0, 0.7);
-  --shadow-glow: 0 0 45px rgba(108, 92, 231, 0.45);
+  --shadow-glow: 0 0 45px rgba(236, 72, 153, 0.45);
 }
 
 /* --------------------------------------------------------------------------
@@ -213,7 +213,7 @@ p {
 
 [data-theme="dark"] .eyebrow {
   color: var(--color-secondary-light);
-  background-color: rgba(143, 133, 243, 0.12);
+  background-color: rgba(244, 114, 182, 0.15);
 }
 
 /* Neon scarcity badge */
@@ -249,13 +249,13 @@ p {
 .btn-primary {
   background-color: var(--color-primary);
   color: var(--color-text-on-primary);
-  box-shadow: 0 4px 20px rgba(108, 92, 231, 0.3);
+  box-shadow: 0 4px 20px rgba(236, 72, 153, 0.35);
 }
 
 .btn-primary:hover {
   background-color: var(--color-primary-hover);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(108, 92, 231, 0.45);
+  box-shadow: 0 8px 25px rgba(236, 72, 153, 0.5);
 }
 
 .btn-primary:active {
@@ -341,7 +341,7 @@ p {
   align-items: center;
   justify-content: center;
   color: #FFF;
-  box-shadow: 0 4px 12px rgba(108, 92, 231, 0.4);
+  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.4);
 }
 
 .nav-links {
@@ -581,8 +581,8 @@ p {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #10B981;
-  box-shadow: 0 0 10px #10B981;
+  background-color: #EC4899;
+  box-shadow: 0 0 10px #EC4899;
   animation: pulse 2s infinite;
 }
 
@@ -713,7 +713,7 @@ p {
   background-color: var(--color-primary);
   color: var(--color-text-on-primary);
   border-color: var(--color-primary);
-  box-shadow: 0 4px 16px rgba(108, 92, 231, 0.3);
+  box-shadow: 0 4px 16px rgba(236, 72, 153, 0.35);
 }
 
 .showcase-display-card {
@@ -1129,7 +1129,7 @@ p {
    12. FINAL CTA BANNER
    -------------------------------------------------------------------------- */
 .final-cta-card {
-  background: linear-gradient(135deg, var(--color-primary), #4A3DB5);
+  background: linear-gradient(135deg, #EC4899, #BE185D);
   border-radius: var(--radius-lg);
   padding: 80px 40px;
   text-align: center;
@@ -1145,7 +1145,7 @@ p {
 }
 
 .final-cta-card p {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.88);
   font-size: 1.15rem;
   max-width: 600px;
   margin: 0 auto 36px auto;
@@ -1177,20 +1177,20 @@ p {
   flex-grow: 1;
   padding: 16px 20px;
   border-radius: var(--radius-md);
-  background-color: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   color: #FFFFFF;
   font-size: 0.95rem;
   backdrop-filter: blur(8px);
 }
 
 .cta-input::placeholder {
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .cta-input:focus {
   outline: none;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.28);
   border-color: #FFFFFF;
 }
 
