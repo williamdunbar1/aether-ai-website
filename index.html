@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AETHER AI — Refined Intelligence for the Next Era</title>
+  <meta name="description" content="AETHER AI delivers high-status, autonomous neural intelligence for modern engineering teams and enterprise applications.">
+  
+  <!-- Preconnect & Google Fonts (Poppins & Montserrat) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Prevent theme flash script -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('aether-theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. NAVIGATION HEADER
+       ========================================================================= -->
+  <header class="header" id="header">
+    <div class="container nav-wrapper">
+      <!-- Logo -->
+      <a href="#" class="logo" aria-label="AETHER AI Home">
+        <div class="logo-mark">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <span>AETHER</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+      </ul>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Dark/Light Theme Switcher -->
+        <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle light and dark theme">
+          <svg id="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <a href="#pricing" class="btn btn-primary">
+          <span>Launch App</span>
+          <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open mobile navigation menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. HERO SECTION
+       ========================================================================= -->
+  <section class="section hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content fade-in-up">
+        <div class="eyebrow">
+          <span class="badge-neon">v4.0 Live</span>
+          <span>Next-Gen Neural Architecture</span>
+        </div>
+        <h1>Intelligence, Refined for the Next Era.</h1>
+        <p class="hero-subtitle">
+          Aether transforms complex data streams into effortless, autonomous decisions. Engineered with restraint, precision, and zero-latency performance.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#pricing" class="btn btn-primary">
+            <span>Start Free 14-Day Trial</span>
+            <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#features" class="btn btn-secondary">
+            <span>Explore Technology</span>
+          </a>
+        </div>
+
+        <div class="hero-metrics-pill">
+          <div class="user-avatars-group">
+            <img src="assets/avatar-1.jpg" alt="User Avatar 1">
+            <img src="assets/avatar-2.jpg" alt="User Avatar 2">
+            <img src="assets/avatar-3.jpg" alt="User Avatar 3">
+          </div>
+          <span>Trusted by <strong>10,000+</strong> engineering leaders</span>
+        </div>
+      </div>
+
+      <!-- Hero Visual Asset & Floating Live Terminal Widget -->
+      <div class="hero-visual fade-in-up">
+        <div class="hero-main-card">
+          <div class="hero-image-wrapper">
+            <img src="assets/hero-3d.png" alt="AETHER 3D Abstract Crystal Neural Node Visual">
+          </div>
+          
+          <div class="hero-floating-widget">
+            <div class="widget-header">
+              <div class="widget-status">
+                <span class="pulse-dot"></span>
+                <span>Cognitive Mesh Active</span>
+              </div>
+              <span class="badge-neon">Sub-Millisecond</span>
+            </div>
+            <div class="widget-terminal-output" id="terminal-live-text">
+              > AETHER.init({ model: "quantum-reasoner-v4" })
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. SOCIAL PROOF & CREDIBILITY
+       ========================================================================= -->
+  <section class="social-proof-section">
+    <div class="container">
+      <div class="stats-grid fade-in-up">
+        <div class="stat-card">
+          <div class="stat-number">$42M+</div>
+          <div class="stat-label">Infrastructure Costs Saved</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">99.98%</div>
+          <div class="stat-label">Uptime SLA Guarantee</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">10x</div>
+          <div class="stat-label">Faster Deployment Speed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">500k+</div>
+          <div class="stat-label">API Queries / Minute</div>
+        </div>
+      </div>
+
+      <div class="logos-title">Powering Next-Generation Teams At</div>
+      <div class="logos-row fade-in-up">
+        <div class="client-logo">STRIPE AI</div>
+        <div class="client-logo">VERCEL</div>
+        <div class="client-logo">FIGMA</div>
+        <div class="client-logo">LINEAR</div>
+        <div class="client-logo">NOTION TECH</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. PRODUCT / FEATURE SHOWCASE (INTERACTIVE TABS)
+       ========================================================================= -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <div class="eyebrow">Product Showcase</div>
+        <h2>Architected for Uncompromising Velocity</h2>
+        <p>Four interconnected modules designed to elevate your AI infrastructure with absolute reliability.</p>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="tabs-container fade-in-up">
+        <button class="tab-btn active" data-tab="cognitive">Cognitive Mesh</button>
+        <button class="tab-btn" data-tab="vector">Neural Vector Engine</button>
+        <button class="tab-btn" data-tab="latency">Zero-Latency API</button>
+        <button class="tab-btn" data-tab="security">Enterprise Guardrails</button>
+      </div>
+
+      <!-- Tab Showcase Display Card -->
+      <div class="showcase-display-card fade-in-up">
+        <!-- Panel 1: Cognitive Mesh -->
+        <div class="tab-panel-content active" id="tab-cognitive">
+          <h3>Autonomous Multi-Agent Reasoning</h3>
+          <p style="margin-top: 12px;">Distribute complex computational workloads across self-healing cognitive clusters without configuring orchestrators.</p>
+          <ul class="feature-list-bullet">
+            <li>
+              <div class="check-icon">✓</div>
+              <span>Automatic prompt routing & load balancing</span>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <span>Real-time fallback state management</span>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <span>Built-in deterministic memory caching</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Panel 2: Neural Vector Engine -->
+        <div class="tab-panel-content" id="tab-vector">
+          <h3>High-Density Vector Indexing</h3>
+          <p style="margin-top: 12px;">Query billions of high-dimensional embeddings with single-digit millisecond response times globally.</p>
+          <ul class="feature-list-bullet">
+            <li>
+              <div class="check-icon">✓</div>
+              <span>Hybrid sparse & dense semantic search</span>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <span>Zero-downtime dynamic indexing</span>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <span>Native HNSW index compression</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Panel 3: Zero-Latency API -->
+        <div class="tab-panel-content" id="tab-latency">
+          <h3>Edge-Optimized Streaming Protocol</h3>
+          <p style="margin-top: 12px;">Deploy near your end-users with 280+ edge points of presence and persistent WebSocket streaming.</p>
+          <ul class="feature-list-bullet">
+            <li>
+              <div class="check-icon">✓</div>
+              <span>HTTP/3 & gRPC binary transport</span>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <span>Global edge token streaming</span>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <span>Automatic payload deduplication</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Panel 4: Enterprise Guardrails -->
+        <div class="tab-panel-content" id="tab-security">
+          <h3>SOC-2 Type II Certified Governance</h3>
+          <p style="margin-top: 12px;">Complete data isolation, private VPC peering, and automated toxic output filtering out of the box.</p>
+          <ul class="feature-list-bullet">
+            <li>
+              <div class="check-icon">✓</div>
+              <span>Zero data retention guarantee</span>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <span>Custom PII obfuscation rules</span>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <span>Role-based access control (RBAC)</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Interactive Preview Mockup Box -->
+        <div class="feature-preview-box">
+          <div class="code-window-header">
+            <span class="window-dot red"></span>
+            <span class="window-dot yellow"></span>
+            <span class="window-dot green"></span>
+            <span style="font-size: 0.8rem; color: var(--color-text-muted); margin-left: 8px;">aether-pipeline.config.ts</span>
+          </div>
+          <pre style="font-family: monospace; font-size: 0.85rem; color: var(--color-primary); overflow-x: auto; line-height: 1.6;">
+<span style="color: var(--color-secondary);">import</span> { AetherMesh } <span style="color: var(--color-secondary);">from</span> <span style="color: #10B981;">'@aether/core'</span>;
+
+<span style="color: var(--color-text-secondary);">// Initialize Cognitive Pipeline</span>
+<span style="color: var(--color-secondary);">const</span> mesh = <span style="color: var(--color-secondary);">new</span> AetherMesh({
+  region: <span style="color: #10B981;">'global-edge'</span>,
+  security: { piiFilter: <span style="color: var(--color-primary);">true</span> },
+  maxLatencyMs: <span style="color: #F59E0B;">50</span>
+});
+
+<span style="color: var(--color-secondary);">await</span> mesh.streamResponse({
+  prompt: <span style="color: #10B981;">'Synthesize vector telemetry'</span>
+});</pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. HOW IT WORKS (3-STEP PROCESS)
+       ========================================================================= -->
+  <section class="section" id="how-it-works" style="background-color: var(--color-bg-card-subtle);">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <div class="eyebrow">Simplified Workflow</div>
+        <h2>From Connection to Scale in 3 Steps</h2>
+        <p>Zero complex setup. Integrating Aether into your tech stack takes less than 10 minutes.</p>
+      </div>
+
+      <div class="steps-grid fade-in-up">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <h3>Connect Your Data</h3>
+          <p>Plug into your existing PostgreSQL, Snowflake, or BigQuery databases using native lightweight SDK connectors.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <h3>Configure Rules</h3>
+          <p>Define custom cognitive policies, security boundaries, and latency budgets using our clean declarative dashboard.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <h3>Deploy & Scale</h3>
+          <p>Instantly deploy endpoints to 280+ global edge locations with automated autoscaling and zero infrastructure overhead.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. TESTIMONIALS
+       ========================================================================= -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <div class="eyebrow">Client Validation</div>
+        <h2>Trusted by Modern Industry Leaders</h2>
+        <p>Hear how top engineering teams rely on Aether to power mission-critical AI workloads.</p>
+      </div>
+
+      <div class="testimonials-grid fade-in-up">
+        <!-- Card 1 -->
+        <div class="testimonial-card">
+          <div>
+            <div class="rating-stars">★★★★★</div>
+            <p class="testimonial-quote">"Aether cut our model inference latency by 70% in the first week. The restraint and polish of their platform is completely unprecedented."</p>
+          </div>
+          <div class="author-info">
+            <img src="assets/avatar-1.jpg" alt="Elena Rostova" class="author-avatar">
+            <div>
+              <div class="author-name">Elena Rostova</div>
+              <div class="author-role">VP of Infrastructure, CloudScale</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="testimonial-card">
+          <div>
+            <div class="rating-stars">★★★★★</div>
+            <p class="testimonial-quote">"The developer experience is Apple-grade. We replaced 4 separate vector and queuing tools with a single clean Aether integration."</p>
+          </div>
+          <div class="author-info">
+            <img src="assets/avatar-2.jpg" alt="Marcus Vance" class="author-avatar">
+            <div>
+              <div class="author-name">Marcus Vance</div>
+              <div class="author-role">CTO & Founder, Synthetic Labs</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="testimonial-card">
+          <div>
+            <div class="rating-stars">★★★★★</div>
+            <p class="testimonial-quote">"Data privacy and compliance were non-negotiables for us. Aether's SOC-2 guardrails allowed us to ship AI features to enterprise clients in days."</p>
+          </div>
+          <div class="author-info">
+            <img src="assets/avatar-3.jpg" alt="Sophia Chen" class="author-avatar">
+            <div>
+              <div class="author-name">Sophia Chen</div>
+              <div class="author-role">Head of Product, Apex Financial</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. PRICING SECTION
+       ========================================================================= -->
+  <section class="section" id="pricing" style="background-color: var(--color-bg-card-subtle);">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <div class="eyebrow">Predictable Pricing</div>
+        <h2>Simple Tiers for Every Stage</h2>
+        <p>No surprise token fees. Transparent pricing designed to scale seamlessly with your growth.</p>
+      </div>
+
+      <!-- Billing Toggle Switch -->
+      <div class="billing-toggle-wrapper fade-in-up">
+        <span class="billing-label">Monthly</span>
+        <div class="toggle-switch" id="billing-toggle" role="button" aria-label="Toggle annual billing discount">
+          <div class="toggle-slider"></div>
+        </div>
+        <span class="billing-label">Annual <span class="badge-neon">Save 20%</span></span>
+      </div>
+
+      <!-- Pricing Grid -->
+      <div class="pricing-grid fade-in-up">
+        <!-- Starter Tier -->
+        <div class="pricing-card">
+          <h3>Starter</h3>
+          <p style="font-size: 0.9rem; margin-top: 4px;">Ideal for early-stage startups & prototypes</p>
+          <div class="price-display">
+            <span class="price-currency">$</span>
+            <span class="price-value" id="price-starter">49</span>
+            <span class="price-period">/mo</span>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Up to 100k API queries/mo</li>
+            <li>✓ 3 Cognitive Nodes</li>
+            <li>✓ Standard Edge Routing</li>
+            <li>✓ Community Support</li>
+          </ul>
+          <a href="#" class="btn btn-secondary" style="width: 100%;">Get Started</a>
+        </div>
+
+        <!-- Pro Tier (RECOMMENDED) -->
+        <div class="pricing-card recommended">
+          <div class="pricing-badge">
+            <span class="badge-neon">★ Most Popular</span>
+          </div>
+          <h3>Pro Enterprise</h3>
+          <p style="font-size: 0.9rem; margin-top: 4px;">For scaling engineering teams & production apps</p>
+          <div class="price-display">
+            <span class="price-currency">$</span>
+            <span class="price-value" id="price-pro">149</span>
+            <span class="price-period">/mo</span>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Up to 2.5M API queries/mo</li>
+            <li>✓ Unlimited Cognitive Nodes</li>
+            <li>✓ Sub-10ms Global Latency</li>
+            <li>✓ SOC-2 Guardrails & PII Filter</li>
+            <li>✓ 24/7 Dedicated Slack Channel</li>
+          </ul>
+          <a href="#" class="btn btn-primary" style="width: 100%;">Start 14-Day Free Trial</a>
+        </div>
+
+        <!-- Enterprise Tier -->
+        <div class="pricing-card">
+          <h3>Custom Scale</h3>
+          <p style="font-size: 0.9rem; margin-top: 4px;">Dedicated infrastructure & custom SLAs</p>
+          <div class="price-display">
+            <span class="price-currency">$</span>
+            <span class="price-value" id="price-enterprise">499</span>
+            <span class="price-period">/mo</span>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Unlimited API Queries</li>
+            <li>✓ Private VPC & Dedicated Nodes</li>
+            <li>✓ 99.99% Uptime SLA</li>
+            <li>✓ Custom Fine-tuned Models</li>
+            <li>✓ Executive Account Manager</li>
+          </ul>
+          <a href="#" class="btn btn-secondary" style="width: 100%;">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. FAQ SECTION (ACCORDION)
+       ========================================================================= -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <div class="eyebrow">Clear Answers</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about Aether's architecture, security, and trial terms.</p>
+      </div>
+
+      <div class="faq-container fade-in-up">
+        <!-- FAQ 1 -->
+        <div class="faq-item active">
+          <button class="faq-question" aria-expanded="true">
+            <span>How does Aether guarantee sub-millisecond query responses?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Aether uses a distributed edge caching matrix across 280+ global points of presence paired with binary gRPC streaming. Common vector patterns are pre-computed in RAM, bypassing standard network hops.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Is my data stored or used to train public AI models?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Never. Aether enforces a zero-retention privacy architecture by default. Your data payloads pass through ephemeral memory buffers and are never logged, stored, or utilized for model training.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can I migrate from existing vector stores like Pinecone or Weaviate?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. We provide zero-downtime migration scripts and compatibility wrappers for standard OpenAI and Pinecone SDKs. You can migrate your index in under 15 minutes.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What happens after the 14-day free trial ends?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>You can upgrade to any tier at any point during your trial. If you choose not to upgrade, your account automatically reverts to our free Developer Sandbox tier with generous monthly caps.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Do you offer custom SLA & dedicated enterprise support?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Enterprise plans include 99.99% uptime SLAs, custom VPC deployment options, HIPAA compliance agreements, and dedicated solution architects available 24/7 on Slack.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. FINAL CTA BANNER
+       ========================================================================= -->
+  <section class="section" style="padding-bottom: 120px;">
+    <div class="container">
+      <div class="final-cta-card fade-in-up">
+        <h2>Ready to Transform Your AI Infrastructure?</h2>
+        <p>Join over 10,000 engineering leaders shipping sub-millisecond AI applications with Aether today.</p>
+
+        <form class="cta-form" id="cta-form">
+          <input type="email" class="cta-input" placeholder="Enter your work email..." required aria-label="Work Email Address">
+          <button type="submit" class="btn btn-cta-submit">Request Early Access</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-mark">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <span>AETHER</span>
+          </a>
+          <p>Quiet luxury and unyielding performance for the next generation of artificial intelligence.</p>
+        </div>
+
+        <!-- Column 1: Product -->
+        <div>
+          <div class="footer-column-title">Product</div>
+          <ul class="footer-links">
+            <li><a href="#features" class="footer-link">Cognitive Mesh</a></li>
+            <li><a href="#features" class="footer-link">Vector Engine</a></li>
+            <li><a href="#features" class="footer-link">Edge API</a></li>
+            <li><a href="#pricing" class="footer-link">Pricing Tiers</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Developers -->
+        <div>
+          <div class="footer-column-title">Developers</div>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Documentation</a></li>
+            <li><a href="#" class="footer-link">API Reference</a></li>
+            <li><a href="#" class="footer-link">GitHub SDKs</a></li>
+            <li><a href="#" class="footer-link">System Status</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Company -->
+        <div>
+          <div class="footer-column-title">Company</div>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">About Us</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 AETHER AI Technologies Inc. All rights reserved.</div>
+        <div class="system-status">
+          <span class="pulse-dot"></span>
+          <span>All Systems Operational</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Alert Popup -->
+  <div class="toast-notification" id="toast-notification"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/app.js"></script>
+</body>
+</html>
