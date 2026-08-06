@@ -1,28 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="light">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KAITO — Inteligência Felina de Alta Performance</title>
-  <meta name="description" content="KAITO entrega a tecnologia definitiva para o cuidado, tradução de miaus e saúde inteligente do seu gatinho.">
+  <title>La Cavi Pizzaria — Pizza Bem Recheada em Imbituba - SC (5,0 ⭐)</title>
+  <meta name="description" content="La Cavi Pizzaria em Imbituba - SC. Pizzas artesanais extremamente recheadas para entrega e retirada em Vila Nova. Peça pelo WhatsApp (48) 98457-0372 ou Cardápio Digital.">
   
-  <!-- Preconnect & Google Fonts (Poppins & Montserrat) -->
+  <!-- Preconnect & Google Fonts (Playfair Display & Montserrat) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
   
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
-  
-  <!-- Prevent theme flash script -->
-  <script>
-    (function() {
-      const savedTheme = localStorage.getItem('aether-theme');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-        document.documentElement.setAttribute('data-theme', 'dark');
+
+  <!-- SEO Local JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "La Cavi Pizzaria",
+    "image": "https://telez.app.br",
+    "telephone": "+5548984570372",
+    "url": "https://telez.app.br",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. São Pedro",
+      "addressLocality": "Imbituba",
+      "addressRegion": "SC",
+      "postalCode": "88780-000",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -28.234,
+      "longitude": -48.672
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "16"
+    },
+    "servesCuisine": "Pizza",
+    "priceRange": "$$",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "18:30",
+        "closes": "00:00"
       }
-    })();
+    ]
+  }
   </script>
 </head>
 <body>
@@ -30,65 +59,30 @@
   <!-- =========================================================================
        1. NAVIGATION HEADER
        ========================================================================= -->
-  <header class="header" id="header">
-    <div class="container nav-wrapper">
-      <!-- Logo -->
-      <a href="#" class="logo" aria-label="KAITO Home">
-        <div class="logo-mark">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"/>
-            <circle cx="9" cy="10" r="1.5"/>
-            <circle cx="15" cy="10" r="1.5"/>
-            <path d="M12 14s-2 1.5-2 2.5 1 1 2 1 2-.5 2-1-2-2.5-2-2.5z"/>
-          </svg>
-        </div>
-        <span>KAITO 🐾</span>
+  <header class="header">
+    <div class="container header-wrapper">
+      <a href="#" class="logo-brand">
+        <div class="logo-icon">🍕</div>
+        <span>La Cavi Pizzaria</span>
       </a>
 
-      <!-- Desktop Nav Links -->
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#features" class="nav-link">Recursos IA</a></li>
-        <li><a href="#how-it-works" class="nav-link">Como Funciona</a></li>
-        <li><a href="#testimonials" class="nav-link">Depoimentos</a></li>
-        <li><a href="#pricing" class="nav-link">Planos</a></li>
-        <li><a href="#faq" class="nav-link">FAQ</a></li>
+      <!-- Desktop Nav -->
+      <ul class="nav-desktop">
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#como-pedir">Como Pedir</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#contato">Localização</a></li>
       </ul>
 
-      <!-- Nav Actions -->
-      <div class="nav-actions">
-        <!-- Dark/Light Theme Switcher -->
-        <button class="theme-toggle" id="theme-toggle-btn" aria-label="Alternar tema claro e escuro">
-          <svg id="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-          <svg id="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-        </button>
-
-        <a href="#pricing" class="btn btn-primary">
-          <span>Ver Planos Kaito</span>
-          <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <span id="store-status-badge" class="badge-status open">
+          <span class="status-dot"></span>
+          <span>Aberto Hoje (18:30 às 00:00)</span>
+        </span>
+        <a href="https://wa.me/5548984570372?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20na%20La%20Cavi%20Pizzaria" target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding: 10px 18px; font-size: 0.85rem;">
+          💬 WhatsApp
         </a>
-
-        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
       </div>
     </div>
   </header>
@@ -98,310 +92,251 @@
        ========================================================================= -->
   <section class="section hero-section">
     <div class="container hero-grid">
-      <div class="hero-content fade-in-up">
-        <div class="eyebrow">
-          <span class="badge-neon">v4.0 Purr-Engine</span>
-          <span>Inteligência Felina Avançada</span>
+      <div class="hero-content">
+        <div class="badge-rating">
+          <span>⭐ 5,0 no Google</span>
+          <span style="opacity: 0.6;">|</span>
+          <span>16 avaliações reais</span>
         </div>
-        <h1>Inteligência Felina, Refinada para o Seu Gatinho.</h1>
+
+        <h1>A pizza mais <span class="hero-highlight">bem recheada</span> de Imbituba.</h1>
         <p class="hero-subtitle">
-          Kaito conecta a saúde, comportamento e nutrição do seu felino com IA preditiva em tempo real. O mimo definitivo com a tecnologia de luxo que ele merece.
+          Massa crocante assada no ponto certo, ingredientes frescos de alta qualidade e recheio de verdade. Peça sem medo para entregar quentinha na sua casa ou retire em Vila Nova!
         </p>
 
         <div class="hero-actions">
-          <a href="#pricing" class="btn btn-primary">
-            <span>Começar Teste Grátis 14 Dias</span>
-            <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
+          <a href="https://telez.app.br" target="_blank" rel="noopener" class="btn btn-primary">
+            <span>📖 Ver Cardápio Digital</span>
           </a>
-          <a href="#features" class="btn btn-secondary">
-            <span>Ver Como Funciona</span>
+          <a href="https://wa.me/5548984570372?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20na%20La%20Cavi%20Pizzaria" target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <span>💬 Pedir pelo WhatsApp</span>
           </a>
         </div>
-
-        <div class="hero-metrics-pill">
-          <div class="user-avatars-group">
-            <img src="assets/cat-avatar-1.jpg" alt="Gatinho Luna">
-            <img src="assets/cat-avatar-2.jpg" alt="Gatinho Oliver">
-            <img src="assets/cat-avatar-3.jpg" alt="Gatinho Thor">
-          </div>
-          <span>Amado por mais de <strong>10.000+</strong> gatinhos e tutores</span>
-        </div>
       </div>
 
-      <!-- Hero Visual Asset & Floating Live Terminal Widget -->
-      <div class="hero-visual fade-in-up">
-        <div class="hero-main-card">
-          <div class="hero-image-wrapper">
-            <img src="assets/hero-cat.png" alt="Gatinho Luxuoso vestindo Colar Smart Kaito com Luz Rosa">
-          </div>
-          
-          <div class="hero-floating-widget">
-            <div class="widget-header">
-              <div class="widget-status">
-                <span class="pulse-dot"></span>
-                <span>Colar Smart Kaito Conectado</span>
-              </div>
-              <span class="badge-neon">Tradutor de Miaus ON</span>
+      <!-- Hero Visual Card -->
+      <div class="hero-card-visual">
+        <div class="pizza-badge-overlay">
+          <span>🔥 Forno Quente</span>
+          <span style="font-weight: 400; font-size: 0.85rem;">Vila Nova - SC</span>
+        </div>
+
+        <div class="pizza-visual-illustration">
+          🍕✨
+        </div>
+
+        <div style="text-align: center;">
+          <div style="font-family: var(--font-headline); font-size: 1.4rem; font-weight: 700; margin-bottom: 4px;">La Cavi Speciale</div>
+          <p style="color: rgba(255,255,255,0.85); font-size: 0.9rem;">Muito queijo derretido & recheio de borda a borda</p>
+        </div>
+
+        <div class="hero-feature-pill">
+          🚀 Entrega Rápida & Takeout
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. DIFFERENTIALS (SOBRE A LA CAVI)
+       ========================================================================= -->
+  <section class="section differentials-section" id="sobre">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-rating" style="margin-bottom: 12px;">Por que a La Cavi?</div>
+        <h2>O Segredo do Nosso Sabor 5 Estrelas</h2>
+        <p>Preparamos cada pizza com carinho caseiro e rigor profissional para que cada fatia seja inesquecível.</p>
+      </div>
+
+      <div class="diff-grid">
+        <!-- Diff 1 -->
+        <div class="diff-card">
+          <div class="diff-icon">🧀</div>
+          <h3>Recheio de Verdade</h3>
+          <p>Sem economizar nos ingredientes. Nossas pizzas são famosas por serem extremamente bem recheadas e suculentas.</p>
+        </div>
+
+        <!-- Diff 2 -->
+        <div class="diff-card">
+          <div class="diff-icon">🌾</div>
+          <h3>Massa Artesanal</h3>
+          <p>Massa preparada diariamente com fermentação controlada, leve e com borda crocante assada com perfeição.</p>
+        </div>
+
+        <!-- Diff 3 -->
+        <div class="diff-card">
+          <div class="diff-icon">🛵</div>
+          <h3>Chega Quentinha</h3>
+          <p>Embalagens térmicas especiais para manter o queijo derretido e a crocância até a porta da sua casa em Imbituba.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. MENU HIGHLIGHTS (OS MAIS PEDIDOS)
+       ========================================================================= -->
+  <section class="section" id="cardapio">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-rating" style="margin-bottom: 12px;">Favoritos da Galera</div>
+        <h2>Pizzas em Destaque</h2>
+        <p>Conheça os sabores campeões de pedidos que conquistaram Imbituba.</p>
+      </div>
+
+      <div class="menu-grid">
+        <!-- Pizza 1 (Favorite) -->
+        <div class="menu-card">
+          <div class="menu-card-icon">🥩</div>
+          <div class="menu-card-body">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+              <h3>Strogonoff de Carne</h3>
+              <span class="menu-badge-favorite">⭐ A Mais Elogiada</span>
             </div>
-            <div class="widget-terminal-output" id="terminal-live-text">
-              > KAITO.init({ cat: "Luna", mood: "Super Feliz 🐱" })
+            <p>Suculento strogonoff de carne temperado com molho cremoso especial, mussarela derretida e batata palha super crocante.</p>
+            <a href="https://wa.me/5548984570372?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20a%20Pizza%20de%20Strogonoff%20de%20Carne" target="_blank" rel="noopener" style="font-weight: 700; color: var(--color-primary); font-size: 0.9rem;">
+              Quero essa no WhatsApp →
+            </a>
+          </div>
+        </div>
+
+        <!-- Pizza 2 -->
+        <div class="menu-card">
+          <div class="menu-card-icon">🥓</div>
+          <div class="menu-card-body">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+              <h3>Bacon com Abacaxi</h3>
+              <span class="menu-badge-favorite">🍍 Agridoce Único</span>
             </div>
+            <p>Bacon em cubos crocantes, pedaços selecionados de abacaxi e mussarela especial. O contraste agridoce irresistível.</p>
+            <a href="https://wa.me/5548984570372?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20a%20Pizza%20de%20Bacon%20com%20Abacaxi" target="_blank" rel="noopener" style="font-weight: 700; color: var(--color-primary); font-size: 0.9rem;">
+              Quero essa no WhatsApp →
+            </a>
+          </div>
+        </div>
+
+        <!-- Pizza 3 -->
+        <div class="menu-card">
+          <div class="menu-card-icon">🍕</div>
+          <div class="menu-card-body">
+            <h3>Calabresa com Catupiry</h3>
+            <p>Fatias generosas de calabresa artesanal, cebola roxa fresca, orégano selecionado e camada abundante de Catupiry original.</p>
+            <a href="https://wa.me/5548984570372?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20a%20Pizza%20de%20Calabresa" target="_blank" rel="noopener" style="font-weight: 700; color: var(--color-primary); font-size: 0.9rem;">
+              Quero essa no WhatsApp →
+            </a>
+          </div>
+        </div>
+
+        <!-- Pizza 4 -->
+        <div class="menu-card">
+          <div class="menu-card-icon">🧀</div>
+          <div class="menu-card-body">
+            <h3>Quatro Queijos Supremo</h3>
+            <p>Combinação perfeita de mussarela, catupiry cremoso, provolone defumado e um toque marcante de queijo gorgonzola.</p>
+            <a href="https://wa.me/5548984570372?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20a%20Pizza%20Quatro%20Queijos" target="_blank" rel="noopener" style="font-weight: 700; color: var(--color-primary); font-size: 0.9rem;">
+              Quero essa no WhatsApp →
+            </a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- =========================================================================
-       3. SOCIAL PROOF & CREDIBILITY
-       ========================================================================= -->
-  <section class="social-proof-section">
-    <div class="container">
-      <div class="stats-grid fade-in-up">
-        <div class="stat-card">
-          <div class="stat-number">1.2M+</div>
-          <div class="stat-label">Miaus Traduzidos com Sucesso</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">99.98%</div>
-          <div class="stat-label">Precisão na Monitoração de Saúde</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">10x</div>
-          <div class="stat-label">Mais Ronronados Diários</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">500k+</div>
-          <div class="stat-label">Refeições Gourmet Calculadas</div>
-        </div>
-      </div>
-
-      <div class="logos-title">Destaque nas Principais Publicações Pet & Tech</div>
-      <div class="logos-row fade-in-up">
-        <div class="client-logo">PURR VOGUE</div>
-        <div class="client-logo">CATFLIX</div>
-        <div class="client-logo">MEOW LABS</div>
-        <div class="client-logo">WHISKER MAG</div>
-        <div class="client-logo">FELINE AI</div>
+      <div class="menu-cta-wrapper">
+        <a href="https://telez.app.br" target="_blank" rel="noopener" class="btn btn-primary">
+          <span>📖 Ver Cardápio Completo & Sabores Doces em Telez.app.br</span>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- =========================================================================
-       4. PRODUCT / FEATURE SHOWCASE (INTERACTIVE TABS)
+       5. HOW TO ORDER (3 STEPS)
        ========================================================================= -->
-  <section class="section" id="features">
+  <section class="section steps-section" id="como-pedir">
     <div class="container">
-      <div class="section-header fade-in-up">
-        <div class="eyebrow">Recursos Kaito</div>
-        <h2>Tecnologia de Ponta para o Seu Felino</h2>
-        <p>Quatro módulos inteligentes desenvolvidos por veterinários e cientistas de dados para mimar seu gatinho.</p>
+      <div class="section-header">
+        <div class="badge-rating" style="margin-bottom: 12px;">Passo a Passo</div>
+        <h2>Como Fazer Seu Pedido em 3 Passos</h2>
+        <p>Prático, rápido e sem complicação. Receba em casa ou retire quentinha na nossa pizzaria.</p>
       </div>
 
-      <!-- Tab Buttons -->
-      <div class="tabs-container fade-in-up">
-        <button class="tab-btn active" data-tab="cognitive">Tradutor de Miaus</button>
-        <button class="tab-btn" data-tab="vector">Nutrição Preditiva</button>
-        <button class="tab-btn" data-tab="latency">Monitor de Saúde 24/7</button>
-        <button class="tab-btn" data-tab="security">Rastreamento GPS</button>
-      </div>
-
-      <!-- Tab Showcase Display Card -->
-      <div class="showcase-display-card fade-in-up">
-        <!-- Panel 1: Tradutor de Miaus -->
-        <div class="tab-panel-content active" id="tab-cognitive">
-          <h3>IA Tradutora de Miaus e Linguagem Corporal</h3>
-          <p style="margin-top: 12px;">Entenda exatamente se o seu gatinho quer carinho, sachê, brincadeira ou tranquilidade em tempo real no aplicativo Kaito.</p>
-          <ul class="feature-list-bullet">
-            <li>
-              <div class="check-icon">✓</div>
-              <span>Análise harmônica de frequências acústicas de miaus</span>
-            </li>
-            <li>
-              <div class="check-icon">✓</div>
-              <span>Detecção de postura corporal por visão computacional</span>
-            </li>
-            <li>
-              <div class="check-icon">✓</div>
-              <span>Notificações imediatas "Hora do Carinho no Queixo!"</span>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Panel 2: Nutrição Preditiva -->
-        <div class="tab-panel-content" id="tab-vector">
-          <h3>Plano Alimentar Personalizado com IA</h3>
-          <p style="margin-top: 12px;">Calibre com precisão grama a grama as porções ideais de ração e sachê com base na atividade diária do seu felino.</p>
-          <ul class="feature-list-bullet">
-            <li>
-              <div class="check-icon">✓</div>
-              <span>Cálculo metabólico automático pós-brincadeira</span>
-            </li>
-            <li>
-              <div class="check-icon">✓</div>
-              <span>Prevenção inteligente de obesidade e cálculo de peso ideal</span>
-            </li>
-            <li>
-              <div class="check-icon">✓</div>
-              <span>Integração com alimentadores automáticos Kaito</span>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Panel 3: Monitor de Saúde 24/7 -->
-        <div class="tab-panel-content" id="tab-latency">
-          <h3>Sinais Vitais e Prevenção Veterinária</h3>
-          <p style="margin-top: 12px;">Identifique sinais precoces de desconforto ou desidratação antes mesmo de surgirem sintomas visíveis.</p>
-          <ul class="feature-list-bullet">
-            <li>
-              <div class="check-icon">✓</div>
-              <span>Monitoramento de ronronados e batimentos cardíacos</span>
-            </li>
-            <li>
-              <div class="check-icon">✓</div>
-              <span>Rastreamento do ciclo de sono profundo e REM felino</span>
-            </li>
-            <li>
-              <div class="check-icon">✓</div>
-              <span>Alertas diretos para o seu veterinário de confiança</span>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Panel 4: Rastreamento GPS -->
-        <div class="tab-panel-content" id="tab-security">
-          <h3>Localização Espacial com Alerta Antifuga</h3>
-          <p style="margin-top: 12px;">Crie cercas virtuais inteligentes em casa e saiba onde seu peludo está a cada segundo com precisão milimétrica.</p>
-          <ul class="feature-list-bullet">
-            <li>
-              <div class="check-icon">✓</div>
-              <span>Rastreamento Ultra-Wideband + GPS espacial</span>
-            </li>
-            <li>
-              <div class="check-icon">✓</div>
-              <span>Colar ultraleve à prova d'água com fecho antienforcamento</span>
-            </li>
-            <li>
-              <div class="check-icon">✓</div>
-              <span>Sinal sonoro suave para chamar o gatinho para comer</span>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Interactive Preview Mockup Box -->
-        <div class="feature-preview-box">
-          <div class="code-window-header">
-            <span class="window-dot red"></span>
-            <span class="window-dot yellow"></span>
-            <span class="window-dot green"></span>
-            <span style="font-size: 0.8rem; color: var(--color-text-muted); margin-left: 8px;">kaito-cat-profile.json</span>
-          </div>
-          <pre style="font-family: monospace; font-size: 0.85rem; color: var(--color-primary); overflow-x: auto; line-height: 1.6;">
-<span style="color: var(--color-secondary);">const</span> kaitoCat = <span style="color: var(--color-secondary);">new</span> KaitoFeline({
-  name: <span style="color: #10B981;">'Luna 🐈'</span>,
-  breed: <span style="color: #10B981;">'Persa Real'</span>,
-  smartCollar: { battery: <span style="color: #10B981;">'98%'</span>, status: <span style="color: #10B981;">'Active'</span> },
-  currentMood: <span style="color: #10B981;">'Quer sachê de salmão 🐟'</span>
-});
-
-<span style="color: var(--color-secondary);">await</span> kaitoCat.dispenseTreat();</pre>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================================
-       5. HOW IT WORKS (3-STEP PROCESS)
-       ========================================================================= -->
-  <section class="section" id="how-it-works" style="background-color: var(--color-bg-card-subtle);">
-    <div class="container">
-      <div class="section-header fade-in-up">
-        <div class="eyebrow">Simplicidade & Amor</div>
-        <h2>Cuidar do seu Gatinho em 3 Passos</h2>
-        <p>Sem configurações complicadas. O Kaito deixa seu felino mais feliz em poucos minutos.</p>
-      </div>
-
-      <div class="steps-grid fade-in-up">
+      <div class="steps-grid">
         <!-- Step 1 -->
-        <div class="step-card">
-          <div class="step-number">01</div>
-          <h3>Coloque o Colar Kaito</h3>
-          <p>O colar ultraleve (12g) possui design anatômico de luxo e fecho de segurança antienforcamento.</p>
+        <div class="step-box">
+          <div class="step-number">1</div>
+          <h3>Escolha os Sabores</h3>
+          <p>Confira nossos sabores no cardápio digital ou peça sua combinação favorita de meio a meio.</p>
         </div>
 
         <!-- Step 2 -->
-        <div class="step-card">
-          <div class="step-number">02</div>
-          <h3>A IA Aprende o Miau</h3>
-          <p>Em 24 horas a IA mapeia a voz única, miaus de fome e padrões de sono e brincadeiras do seu gato.</p>
+        <div class="step-box">
+          <div class="step-number">2</div>
+          <h3>Chame no WhatsApp</h3>
+          <p>Envie sua mensagem para o número <strong>(48) 98457-0372</strong> ou finalize direto pelo cardápio.</p>
         </div>
 
         <!-- Step 3 -->
-        <div class="step-card">
-          <div class="step-number">03</div>
-          <h3>Receba Insights & Mimos</h3>
-          <p>Acompanhe no app da Kaito a tradução de miaus, conselhos de nutrição e relatórios de felicidade diários.</p>
+        <div class="step-box">
+          <div class="step-number">3</div>
+          <h3>Receba Quentinha</h3>
+          <p>Aguarde a entrega rápida na sua casa ou retire na R. São Pedro em Vila Nova, Imbituba!</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- =========================================================================
-       6. TESTIMONIALS
+       6. REAL REVIEWS (GOOGLE PROOF 5,0 ⭐)
        ========================================================================= -->
-  <section class="section" id="testimonials">
+  <section class="section" id="avaliacoes">
     <div class="container">
-      <div class="section-header fade-in-up">
-        <div class="eyebrow">Aprovação dos Tutores</div>
-        <h2>Depoimentos de Quem Ama Gatos</h2>
-        <p>Descubra como o Kaito transformou a rotina dos felinos mais amados do Brasil.</p>
+      <div class="section-header">
+        <div class="badge-rating" style="margin-bottom: 12px;">Prova Social Real</div>
+        <h2>O Que Nossos Clientes Dizem</h2>
+        <p>Nota máxima 5,0 ⭐ com 16 avaliações reais no Google. Quem pede na La Cavi vira fã!</p>
       </div>
 
-      <div class="testimonials-grid fade-in-up">
-        <!-- Card 1 -->
-        <div class="testimonial-card">
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card">
           <div>
-            <div class="rating-stars">★★★★★</div>
-            <p class="testimonial-quote">"O Kaito traduziu exatamente quando a Luna queria brincar ou quando estava com sede. A qualidade do colar e do app é padrão Apple!"</p>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">"Peçam a de strogonoff de carne é a melhor de todas!"</p>
           </div>
-          <div class="author-info">
-            <img src="assets/cat-avatar-1.jpg" alt="Dra. Mariana & Luna" class="author-avatar">
+          <div class="review-author">
+            <div class="author-avatar-initial">Y</div>
             <div>
-              <div class="author-name">Dra. Mariana Silva</div>
-              <div class="author-role">Tutora da Luna 🐱</div>
+              <div class="author-name">Yasmin De Oliveira</div>
+              <div class="author-source">Avaliação no Google ⭐ 5.0</div>
             </div>
           </div>
         </div>
 
-        <!-- Card 2 -->
-        <div class="testimonial-card">
+        <!-- Review 2 -->
+        <div class="review-card">
           <div>
-            <div class="rating-stars">★★★★★</div>
-            <p class="testimonial-quote">"Detectamos uma alteração leve na hidratação do Oliver no segundo dia graças aos alertas preditivos de saúde do Kaito. Sensacional!"</p>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">"Pizza uma delícia! Bem recheada e chegou no tempo certinho mesmo sendo longe! Pode pedir sem medo."</p>
           </div>
-          <div class="author-info">
-            <img src="assets/cat-avatar-2.jpg" alt="Ricardo & Oliver" class="author-avatar">
+          <div class="review-author">
+            <div class="author-avatar-initial">K</div>
             <div>
-              <div class="author-name">Ricardo Vance</div>
-              <div class="author-role">Tutor do Oliver 🐾</div>
+              <div class="author-name">Katiane Cristina Klock Martins</div>
+              <div class="author-source">Avaliação no Google ⭐ 5.0</div>
             </div>
           </div>
         </div>
 
-        <!-- Card 3 -->
-        <div class="testimonial-card">
+        <!-- Review 3 -->
+        <div class="review-card">
           <div>
-            <div class="rating-stars">★★★★★</div>
-            <p class="testimonial-quote">"Meus 3 gatos usam o colar Kaito. É o produto de luxo mais sofisticado que já comprei para eles. Vale cada centavo!"</p>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">"Sabor e atendimento nota 10. A entrega é rápida e a pizza muito boa e bem recheada 😋"</p>
           </div>
-          <div class="author-info">
-            <img src="assets/cat-avatar-3.jpg" alt="Sophia & Thor" class="author-avatar">
+          <div class="review-author">
+            <div class="author-avatar-initial">F</div>
             <div>
-              <div class="author-name">Sophia Chen</div>
-              <div class="author-role">Tutora do Thor 🐈</div>
+              <div class="author-name">Felipe</div>
+              <div class="author-source">Avaliação no Google ⭐ 5.0</div>
             </div>
           </div>
         </div>
@@ -410,256 +345,113 @@
   </section>
 
   <!-- =========================================================================
-       7. PRICING SECTION
+       7. LOCATION, HOURS & MAP
        ========================================================================= -->
-  <section class="section" id="pricing" style="background-color: var(--color-bg-card-subtle);">
+  <section class="section" id="contato" style="background-color: var(--color-bg-card);">
     <div class="container">
-      <div class="section-header fade-in-up">
-        <div class="eyebrow">Planos Transparentes</div>
-        <h2>Escolha o Plano Perfeito para Seu Gatinho</h2>
-        <p>Sem taxas escondidas. Cancele ou altere o plano do seu felino a qualquer momento.</p>
-      </div>
+      <div class="location-grid">
+        <div>
+          <div class="badge-rating" style="margin-bottom: 12px;">Onde Estamos</div>
+          <h2>Venha Retirar ou Peça em Casa</h2>
+          <p>Estamos localizados no coração de Vila Nova, atendendo toda a região de Imbituba - SC com agilidade.</p>
 
-      <!-- Billing Toggle Switch -->
-      <div class="billing-toggle-wrapper fade-in-up">
-        <span class="billing-label">Mensal</span>
-        <div class="toggle-switch" id="billing-toggle" role="button" aria-label="Alternar desconto de pagamento anual">
-          <div class="toggle-slider"></div>
-        </div>
-        <span class="billing-label">Anual <span class="badge-neon">Economize 20%</span></span>
-      </div>
+          <ul class="location-info-list">
+            <li class="location-info-item">
+              <svg class="location-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              <div>
+                <strong>Endereço:</strong><br>
+                R. São Pedro, Vila Nova, Imbituba - SC, 88780-000<br>
+                <span style="font-size: 0.85rem; color: var(--color-text-muted);">Plus Code: P8P6+45 Vila Nova</span>
+              </div>
+            </li>
 
-      <!-- Pricing Grid -->
-      <div class="pricing-grid fade-in-up">
-        <!-- Starter Tier -->
-        <div class="pricing-card">
-          <h3>Gatinho VIP</h3>
-          <p style="font-size: 0.9rem; margin-top: 4px;">Ideal para 1 gatinho em apartamento</p>
-          <div class="price-display">
-            <span class="price-currency">R$</span>
-            <span class="price-value" id="price-starter">39</span>
-            <span class="price-period">/mês</span>
-          </div>
-          <ul class="pricing-features">
-            <li>✓ Tradutor de Miaus no App</li>
-            <li>✓ Calculadora Nutricional IA</li>
-            <li>✓ Histórico de Ronronados</li>
-            <li>✓ Suporte via Comunidade Pet</li>
+            <li class="location-info-item">
+              <svg class="location-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <div>
+                <strong>Horário de Funcionamento:</strong><br>
+                Segunda a Domingo: 18:30 às 00:00
+              </div>
+            </li>
+
+            <li class="location-info-item">
+              <svg class="location-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+              <div>
+                <strong>Telefone / WhatsApp:</strong><br>
+                <a href="https://wa.me/5548984570372" target="_blank" rel="noopener" style="font-weight: 700; color: var(--color-primary);">(48) 98457-0372</a>
+              </div>
+            </li>
           </ul>
-          <a href="#" class="btn btn-secondary" style="width: 100%;">Assinar VIP</a>
-        </div>
 
-        <!-- Pro Tier (RECOMMENDED) -->
-        <div class="pricing-card recommended">
-          <div class="pricing-badge">
-            <span class="badge-neon">★ O Mais Escolhido</span>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="https://wa.me/5548984570372?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20para%20entrega" target="_blank" rel="noopener" class="btn btn-whatsapp">
+              <span>🛵 Pedir Entrega</span>
+            </a>
+            <a href="https://wa.me/5548984570372?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20para%20retirada" target="_blank" rel="noopener" class="btn btn-secondary">
+              <span>🥡 Retirar no Balcão</span>
+            </a>
           </div>
-          <h3>Gato Supremo</h3>
-          <p style="font-size: 0.9rem; margin-top: 4px;">Experiência completa para até 3 gatinhos</p>
-          <div class="price-display">
-            <span class="price-currency">R$</span>
-            <span class="price-value" id="price-pro">119</span>
-            <span class="price-period">/mês</span>
-          </div>
-          <ul class="pricing-features">
-            <li>✓ Colar Smart Kaito Grátis incluso</li>
-            <li>✓ Tradutor de Miaus Instantâneo 24/7</li>
-            <li>✓ Monitor de Saúde & Sinais Vitais</li>
-            <li>✓ Rastreamento GPS Antifuga</li>
-            <li>✓ Atendimento IA Veterinário 24/7</li>
-          </ul>
-          <a href="#" class="btn btn-primary" style="width: 100%;">Testar 14 Dias Grátis</a>
         </div>
 
-        <!-- Enterprise Tier -->
-        <div class="pricing-card">
-          <h3>Mansão Felina</h3>
-          <p style="font-size: 0.9rem; margin-top: 4px;">Para famílias com múltiplos gatos ou gatis</p>
-          <div class="price-display">
-            <span class="price-currency">R$</span>
-            <span class="price-value" id="price-enterprise">399</span>
-            <span class="price-period">/mês</span>
-          </div>
-          <ul class="pricing-features">
-            <li>✓ Gatos Ilimitados no mesmo perfil</li>
-            <li>✓ Colares Smart Banhados a Ouro Rose</li>
-            <li>✓ Dispensador Inteligente de Sachê incluso</li>
-            <li>✓ Consulta Vet Mensal por Telemedicina</li>
-            <li>✓ Concierge Felino Exclusivo</li>
-          </ul>
-          <a href="#" class="btn btn-secondary" style="width: 100%;">Falar com Concierge</a>
+        <!-- Embedded Map -->
+        <div class="map-wrapper">
+          <iframe title="Mapa La Cavi Pizzaria em Imbituba SC" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3513.234!2d-48.672!3d-28.234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95267b2520a0662d%3A0xa6bfbf16086f6880!2sVila%20Nova%2C%20Imbituba%20-%20State%20of%20Santa%20Catarina%2C%2088780-000!5e0!3m2!1sen!2sbr!4v1700000000000!5m2!1sen!2sbr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
   </section>
 
   <!-- =========================================================================
-       8. FAQ SECTION (ACCORDION)
-       ========================================================================= -->
-  <section class="section" id="faq">
-    <div class="container">
-      <div class="section-header fade-in-up">
-        <div class="eyebrow">Dúvidas Frequentes</div>
-        <h2>Perguntas Frequentes sobre o Kaito</h2>
-        <p>Respostas diretas sobre a segurança do colar, tradução de miaus e assinatura.</p>
-      </div>
-
-      <div class="faq-container fade-in-up">
-        <!-- FAQ 1 -->
-        <div class="faq-item active">
-          <button class="faq-question" aria-expanded="true">
-            <span>O Colar Smart Kaito é seguro e confortável para os gatos?</span>
-            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </button>
-          <div class="faq-answer">
-            <p>Com certeza. O colar pesa apenas 12 gramas, possui revestimento antialérgico ultra-macio e conta com o fecho antienforcamento breakaway certificado por veterinários internacionais.</p>
-          </div>
-        </div>
-
-        <!-- FAQ 2 -->
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Como a Inteligência Artificial traduz os miaus do meu gato?</span>
-            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </button>
-          <div class="faq-answer">
-            <p>O Kaito combina o microfone de precisão do colar com um modelo acústico treinado em mais de 10 milhões de miaus felinos, correlacionando tom de voz, frequência e movimentos corporais.</p>
-          </div>
-        </div>
-
-        <!-- FAQ 3 -->
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>E se eu tiver mais de um gatinho em casa?</span>
-            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </button>
-          <div class="faq-answer">
-            <p>O plano Gato Supremo suporta até 3 felinos no mesmo app, e o plano Mansão Felina suporta felinos ilimitados com perfis individuais de saúde e tradução.</p>
-          </div>
-        </div>
-
-        <!-- FAQ 4 -->
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>O rastreador GPS funciona dentro e fora de casa?</span>
-            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </button>
-          <div class="faq-answer">
-            <p>Sim. O colar possui rastreamento espacial de dupla frequência (UWB + GPS), permitindo localizar seu gato mesmo debaixo da cama ou no quintal.</p>
-          </div>
-        </div>
-
-        <!-- FAQ 5 -->
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Como funciona o teste grátis de 14 dias?</span>
-            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </button>
-          <div class="faq-answer">
-            <p>Você recebe o colar Kaito na sua casa e testa todos os recursos por 14 dias sem compromisso. Se não amar a experiência, pode devolver gratuitamente.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================================
-       9. FINAL CTA BANNER
-       ========================================================================= -->
-  <section class="section" style="padding-bottom: 120px;">
-    <div class="container">
-      <div class="final-cta-card fade-in-up">
-        <h2>Pronto para Dar a Vida de Rei que Seu Gatinho Merece?</h2>
-        <p>Junte-se a mais de 10.000 tutores apaixonados que transformaram a saúde e felicidade dos seus felinos com o Kaito.</p>
-
-        <form class="cta-form" id="cta-form">
-          <input type="email" class="cta-input" placeholder="Digite seu e-mail para receber o kit Kaito..." required aria-label="E-mail do tutor">
-          <button type="submit" class="btn btn-cta-submit">Garantir Kit Kaito</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================================
-       10. FOOTER
+       8. FOOTER
        ========================================================================= -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <!-- Brand Info -->
-        <div class="footer-brand">
-          <a href="#" class="logo">
-            <div class="logo-mark">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"/>
-                <circle cx="9" cy="10" r="1.5"/>
-                <circle cx="15" cy="10" r="1.5"/>
-                <path d="M12 14s-2 1.5-2 2.5 1 1 2 1 2-.5 2-1-2-2.5-2-2.5z"/>
-              </svg>
-            </div>
-            <span>KAITO 🐾</span>
-          </a>
-          <p>Luxo silencioso e tecnologia avançada para o bem-estar e amor incondicional pelos felinos.</p>
+        <div>
+          <div style="font-family: var(--font-headline); font-size: 1.5rem; font-weight: 700; color: #FFFFFF; margin-bottom: 12px;">🍕 La Cavi Pizzaria</div>
+          <p>Massa artesanal, ingredientes frescos e o recheio mais generoso de Imbituba - SC. Peça sem medo!</p>
         </div>
 
-        <!-- Column 1: Produto -->
         <div>
-          <div class="footer-column-title">Produto Kaito</div>
+          <div class="footer-title">Links Rápidos</div>
           <ul class="footer-links">
-            <li><a href="#features" class="footer-link">Tradutor de Miaus</a></li>
-            <li><a href="#features" class="footer-link">Nutrição Preditiva</a></li>
-            <li><a href="#features" class="footer-link">Colar Smart GPS</a></li>
-            <li><a href="#pricing" class="footer-link">Planos & Preços</a></li>
+            <li><a href="https://telez.app.br" target="_blank" rel="noopener">Cardápio Digital (Telez)</a></li>
+            <li><a href="https://wa.me/5548984570372" target="_blank" rel="noopener">Fazer Pedido via WhatsApp</a></li>
+            <li><a href="#avaliacoes">Avaliações dos Clientes</a></li>
+            <li><a href="#contato">Endereço e Mapa</a></li>
           </ul>
         </div>
 
-        <!-- Column 2: Tutores -->
         <div>
-          <div class="footer-column-title">Tutores & Vets</div>
-          <ul class="footer-links">
-            <li><a href="#" class="footer-link">Central de Ajuda</a></li>
-            <li><a href="#" class="footer-link">Guia de Saúde Felina</a></li>
-            <li><a href="#" class="footer-link">Para Veterinários</a></li>
-            <li><a href="#" class="footer-link">Status dos Servidores</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 3: Empresa -->
-        <div>
-          <div class="footer-column-title">KAITO</div>
-          <ul class="footer-links">
-            <li><a href="#" class="footer-link">Sobre Nós</a></li>
-            <li><a href="#" class="footer-link">Trabalhe Conosco</a></li>
-            <li><a href="#" class="footer-link">Política de Privacidade</a></li>
-            <li><a href="#" class="footer-link">Termos de Uso</a></li>
-          </ul>
+          <div class="footer-title">Contato & Horário</div>
+          <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>WhatsApp:</strong> (48) 98457-0372</p>
+          <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>Horário:</strong> Seg a Dom: 18:30 às 00:00</p>
+          <p style="font-size: 0.9rem;"><strong>Local:</strong> Vila Nova, Imbituba - SC</p>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>© 2026 KAITO Feline Technologies Inc. Todos os direitos reservados. 🐾</div>
-        <div class="system-status">
-          <span class="pulse-dot"></span>
-          <span>Rede Kaito Operacional</span>
-        </div>
+        <div>© 2026 La Cavi Pizzaria. Todos os direitos reservados. Imbituba - SC.</div>
       </div>
     </div>
   </footer>
 
-  <!-- Toast Notification Alert Popup -->
-  <div class="toast-notification" id="toast-notification"></div>
+  <!-- Floating Mobile WhatsApp Bar -->
+  <div class="floating-mobile-bar">
+    <a href="https://telez.app.br" target="_blank" rel="noopener" class="btn btn-secondary mobile-bar-btn">
+      📖 Cardápio Digital
+    </a>
+    <a href="https://wa.me/5548984570372?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20na%20La%20Cavi%20Pizzaria" target="_blank" rel="noopener" class="btn btn-whatsapp mobile-bar-btn">
+      💬 Pedir no WhatsApp
+    </a>
+  </div>
 
-  <!-- Main JavaScript File -->
   <script src="js/app.js"></script>
 </body>
 </html>
