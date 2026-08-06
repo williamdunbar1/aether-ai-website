@@ -1,5 +1,5 @@
 /**
- * AETHER AI — Master Interactive Script
+ * KAITO — Master Interactive Script for Feline Intelligence
  * Provides: Theme Switcher, Scroll Observer, Interactive Showcase Tabs, 
  * Pricing Calculator, Accordion FAQ, Live Terminal Typing, Toast Alerts.
  */
@@ -165,14 +165,14 @@ function initPricingToggle() {
     
     if (isAnnual) {
       // 20% discount rates
-      if (priceStarter) priceStarter.textContent = '$39';
-      if (pricePro) pricePro.textContent = '$119';
-      if (priceEnterprise) priceEnterprise.textContent = '$399';
+      if (priceStarter) priceStarter.textContent = '31';
+      if (pricePro) pricePro.textContent = '95';
+      if (priceEnterprise) priceEnterprise.textContent = '319';
     } else {
       // Standard monthly rates
-      if (priceStarter) priceStarter.textContent = '$49';
-      if (pricePro) pricePro.textContent = '$149';
-      if (priceEnterprise) priceEnterprise.textContent = '$499';
+      if (priceStarter) priceStarter.textContent = '39';
+      if (pricePro) pricePro.textContent = '119';
+      if (priceEnterprise) priceEnterprise.textContent = '399';
     }
   });
 }
@@ -204,17 +204,17 @@ function initFaqAccordion() {
 }
 
 /* --------------------------------------------------------------------------
-   8. HERO TERMINAL STREAMING SIMULATION
+   8. HERO TERMINAL STREAMING SIMULATION (KAITO CAT EDITION)
    -------------------------------------------------------------------------- */
 function initTerminalTyping() {
   const terminalElement = document.getElementById('terminal-live-text');
   if (!terminalElement) return;
   
   const consoleLines = [
-    'AETHER.init({ model: "quantum-reasoner-v4", latency: "0.4ms" })',
-    'Cognitive mesh connected. 1,024 nodes active.',
-    'Optimizing prompt latency... done [99.98% efficiency].',
-    'Awaiting next query stream...'
+    'KAITO.init({ cat: "Luna 🐱", mood: "Super Feliz" })',
+    'Colar Smart Kaito conectado. Ronronados: 120 bpm.',
+    'Miau traduzido: "Hora do sachê de salmão!"',
+    'Rede Kaito Feline Mesh ativa [99.98% felicidade].'
   ];
   
   let lineIndex = 0;
@@ -258,10 +258,10 @@ function initFormHandler() {
       const emailInput = ctaForm.querySelector('input[type="email"]');
       
       if (emailInput && emailInput.value.trim()) {
-        showToast('✨ Thank you! Early access invitation sent to ' + emailInput.value);
+        showToast('✨ Oun! Kit inicial KAITO enviado com sucesso para ' + emailInput.value);
         emailInput.value = '';
       } else {
-        showToast('Please enter a valid email address.');
+        showToast('Por favor, digite um e-mail válido.');
       }
     });
   }

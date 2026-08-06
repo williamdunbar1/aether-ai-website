@@ -1,17 +1,13 @@
-# AETHER AI — Luxury AI Startup Website
+# KAITO 🐾 — Inteligência Felina & Cuidado de Luxo para Gatinhos
 
-Apple × Stripe × Notion grade luxury digital experience built for AETHER AI.
+Website de luxo da **KAITO**, plataforma de inteligência artificial de alta performance focada em saúde, tradução de miaus, nutrição preditiva e bem-estar para felinos.
 
-## Features
-- **Design System:** Purple-forward luxury color palette (`#6C5CE7`, `#8F85F3`, `#F7F5F0`, `#F5F000` scarcity highlights).
-- **Dark Mode Engine:** Automatic system preference detection & toggle with persistent local storage.
-- **Typography:** Google Fonts `Poppins` (headlines) & `Montserrat` (body).
-- **Interactive UI Modules:**
-  1. Sticky glassmorphism header & mobile navigation drawer.
-  2. Hero with 3D abstract visual asset & live streaming AI terminal widget.
-  3. Interactive 4-tab Product Showcase with code preview window.
-  4. 3-Step simplified workflow breakdown.
-  5. Verified client testimonials with avatar headshots.
-  6. Interactive Monthly/Annual billing switcher (20% discount badge) & recommended tier card glow.
-  7. Accessible FAQ Accordion.
-  8. Email signup form with instant toast alert notifications.
+## Recursos
+- **Identidade de Marca:** Nome KAITO 🐾 com paleta de rosa luxo (`#EC4899` / `#F472B6`) e dark mode.
+- **Hero Felino:** Imagem fotorrealista de um gatinho usando o Colar Smart Kaito com luz rosa e widget de tradução ao vivo.
+- **Módulos IA Felinos:**
+  1. **Tradutor de Miaus:** Decodifica sinais acústicos e corporais do felino em tempo real.
+  2. **Nutrição Preditiva:** Ajusta calorias de sachê e ração pós-atividade.
+  3. **Monitor de Saúde 24/7:** Acompanha batimentos, ronronados e ciclo de sono REM.
+  4. **Rastreamento GPS:** Alertas de cerca virtual antifuga com UWB + GPS.
+- **Planos KAITO:** Gatinho VIP (R$ 39), Gato Supremo (R$ 119 - Recomendado com colar grátis), Mansão Felina (R$ 399 - Multi-gatos com colares banhados a Ouro Rose).
